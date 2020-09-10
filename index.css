@@ -1,0 +1,64 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap');
+
+body {
+    max-width: 600px;
+    margin: auto auto;
+    padding-top: 64px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: #FEF8E4;
+}
+
+h1 {
+    font-family: Fugaz One, cursive;
+    font-size: 2rem;;
+    color: #AF214C;
+    margin: 0 0 2rem 0;
+
+}
+
+h2 {
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.7rem;     
+    margin: 0 0 1.2rem 0;
+}
+
+p {
+    font-family: Nunito, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.76rem;
+    margin: 0 0 1.2rem 0;
+}
+
+a {
+    /* background: linear-gradient(to bottom, #AF214C 0%, #AF214C 100%);
+      background-position: 0 100%;
+      background-repeat: repeat-x;
+      background-size: 3px 2px; */
+    color: #AF214C;
+    text-decoration: none;
+  }
+  
+a:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .4s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%2359A5FF' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 4px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+    color: #4C96EE;
+}
+
+li {
+    font-family: Nunito, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+
+}
+
+#story-list{
+    padding-top: 16px;;
+}
