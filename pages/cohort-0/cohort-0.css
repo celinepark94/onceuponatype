@@ -1,0 +1,102 @@
+body {
+    /* styles that affect the whole page here (like page width or background color) */
+}
+
+h1 {
+    /* header 1 styles here */
+}
+
+h2 {
+    /* header 2 styles here */
+}
+
+h3 {
+    /* header 3 styles here */
+}
+
+h4 {
+    /* header 4 styles here */
+}
+
+p {
+    /* paragraph/body text styles here */ 
+}
+
+a {
+    /* link text styles here */ 
+}
+
+a:hover {
+    /* link text when hovered over styles here */ 
+}
+
+a:active {
+    /* link text when being clicked on over styles here */ 
+}
+
+a:visited {
+    /* link text that's been visited over styles here (defaults ugly) */ 
+}
+
+/* 
+CSS SYNTAX 
+
+type-of-thing-you-want-to-style {
+    property: value;
+}
+
+for example the following will style all "p" which is HTML speak for body text
+
+p {
+    color: #FFFFFF;
+    font-family: Times, serif;
+}
+
+-----------
+
+COMMONLY USED CSS PROPERTIES. 
+see here for full list of props https://www.w3schools.com/cssref/default.asp 
+
+DOC LAYOUT
+- background-color
+- grid (see https://css-tricks.com/snippets/css/complete-guide-grid/);
+- width
+- max-width 
+- margin
+- padding
+
+
+PARAGRAPH OR SECTION LAYOUT
+- display
+- position
+- width 
+- max-width 
+
+
+FONT STYLE
+- color
+- font-family
+- font-weight
+- font-size
+- line-height
+- letter-spacing
+- font-kerning
+- text-decoration
+
+
+PARAGRAPH OR SECTION STYLE
+- padding
+- padding-top
+- padding-left
+- padding-bottom 
+- padding-right
+- margin-top
+- margin-left
+- margin-bottom 
+- margin-right
+- border-color
+- border-style
+- border-radius
+- text-align 
+
+*/
