@@ -1,5 +1,6 @@
 body {
-    /* styles that affect the whole page here (like page width or background color) */
+    width: 640px;
+    padding-left: 64px;
 }
 
 h1 {
@@ -19,7 +20,9 @@ h4 {
 }
 
 p {
-color: pink
+    color: rgb(0,14,255,1);
+    font-size: 1.25em;
+    line-height: 1.5em;
 }
 
 a {
@@ -38,6 +41,13 @@ a:visited {
     /* link text that's been visited over styles here (defaults ugly) */ 
 }
 
+.celine {
+   color: #272727 
+}
+
+#special {
+    color: green;
+}
 /* 
 CSS SYNTAX 
 
