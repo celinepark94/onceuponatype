@@ -39,6 +39,8 @@ Do this exactly. The instructions will make sense as you follow them. If it does
 9. BOOM! All done!
 
 
+BONUS: getting the most recent update: `git pull orgin master`
+
 
 
 TODO FOR CELINE
