@@ -1,3 +1,128 @@
+/* Importing fonts */
+
+/* REDACTION REGULAR */
+@font-face {
+    font-family: Redaction;
+    src: url("./fonts/Redaction-Regular.woff2");
+  }
+
+@font-face {
+    font-family: Redaction;
+    src: url("./fonts/Redaction-Italic.woff2");
+    font-style: italic;
+}
+
+/* REDACTION-10 */
+@font-face {
+    font-family: Redaction-10;
+    src: url("./fonts/Redaction_10-Bold.woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Redaction-10;
+    src: url("./fonts/Redaction_10-Regular.woff2");
+  }
+
+@font-face {
+    font-family: Redaction-10;
+    src: url("./fonts/Redaction_10-Italic.woff2");
+    font-style: italic;
+}
+
+/* REDACTION-20 */
+@font-face {
+    font-family: Redaction-20;
+    src: url("./fonts/Redaction_20-Bold.woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Redaction-20;
+    src: url("./fonts/Redaction_20-Regular.woff2");
+  }
+
+@font-face {
+    font-family: Redaction-20;
+    src: url("./fonts/Redaction_20-Italic.woff2");
+    font-style: italic;
+}
+
+/* REDACTION-35 */
+@font-face {
+    font-family: Redaction-35;
+    src: url("./fonts/Redaction_35-Bold.woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Redaction-35;
+    src: url("./fonts/Redaction_35-Regular.woff2");
+  }
+
+@font-face {
+    font-family: Redaction-35;
+    src: url("./fonts/Redaction_35-Italic.woff2");
+    font-style: italic;
+}
+
+/* REDACTION-50 */
+@font-face {
+    font-family: Redaction-50;
+    src: url("./fonts/Redaction_10-Bold.woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Redaction-50;
+    src: url("./fonts/Redaction_50-Regular.woff2");
+  }
+
+@font-face {
+    font-family: Redaction-50;
+    src: url("./fonts/Redaction_50-Italic.woff2");
+    font-style: italic;
+}
+
+/* REDACTION-70 */
+@font-face {
+    font-family: Redaction-70;
+    src: url("./fonts/Redaction_70-Bold.woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Redaction-70;
+    src: url("./fonts/Redaction_70-Regular.woff2");
+  }
+
+@font-face {
+    font-family: Redaction-70;
+    src: url("./fonts/Redaction_70-Italic.woff2");
+    font-style: italic;
+}
+
+/* REDACTION-100 */
+@font-face {
+    font-family: Redaction-100;
+    src: url("./fonts/Redaction_100-Bold.woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Redaction-100;
+    src: url("./fonts/Redaction_100-Regular.woff2");
+  }
+
+@font-face {
+    font-family: Redaction-10;
+    src: url("./fonts/Redaction_10-Italic.woff2");
+    font-style: italic;
+}
+
+
+/* THIS IS WHERE THE STYLING STARTS */
+
 body {
     width: 640px;
     padding-left: 64px;
@@ -21,8 +146,9 @@ h4 {
 
 p {
     color: rgb(0,14,255,1);
-    font-size: 1.25em;
-    line-height: 1.5em;
+    font-size: 6em;
+    line-height: 7em;
+    font-family: 'Redaction';
 }
 
 a {
@@ -109,5 +235,30 @@ PARAGRAPH OR SECTION STYLE
 - border-style
 - border-radius
 - text-align 
+
+*/
+
+
+/* 
+
+HOW TO MAKE CHANGES TO GITHUB
+Do this exactly. The instructions will make sense as you follow them. If it doesn't work, get my attention and I'll help.
+
+Do this only when you open terminal
+    - Open terminal
+    - type "cd" + space + drag onceuponatype folder into terminal window, hit enter
+
+Do this every time you want to make a change
+    - type "git pull origin master" to check for updates
+    - Then type: git status
+    - Check that it found all the changes you made correctly
+    - Then type: git add *
+    - Then type: git commit -m "write a short message about your changes"
+    - Then type: git push origin master
+    - It should say "working tree clean"
+    BOOM! All done!
+
+PULL DOWN THE LATEST UPDATE
+type into terminal : git pull orgin master 
 
 */
