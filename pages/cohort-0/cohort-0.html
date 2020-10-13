@@ -1,13 +1,20 @@
 <!DOCTYPE html>
+
 <head>
     <link rel="stylesheet" href="cohort-0.css">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
 </head> 
 
-<body>
-    <div class="layout">
 
-    <div class="celine" id="celine1"> 
-    <p>
+<body>
+    <!-- <div id="spotlightLayout"> -->
+    <div id ="layout" class="equalLayout">
+
+    <div id ="celine"> 
+        <!-- <div id="largeStory"> -->
+        <h1>The Rabbit and the Barber</h1>
+        <p>
         There was a rabbit who asked a barber to shave him; in doing so the barber cut off his ear. “Take my ear,” said the rabbit, “and I will take your razors.”
 
         A little further on he saw an old woman pulling grass with her hands. “Take this,” he said, giving her the razor, “and cut grass with it, and I will take your cloth.”
@@ -16,7 +23,7 @@
         
         Then he went a little further and saw a ghee seller. “Take my chudder and give me your ghee,” said the rabbit. So saying, he left the chudder and walked off with the ghee.
         
-        Not long after he met a woman, and told her to make him some goolgoolahs, or sweets, with the ghee. As soon as they were ready he picked them up and ran away. [60]
+        Not long after he met a woman, and told her to make him some goolgoolahs, or sweets, with the ghee. As soon as they were ready he picked them up and ran away.
         
         A little further on was a man with a plough, a horse, and a bullock. “Take these sweets,” said the rabbit, “and I will yoke your plough for you.”
         
@@ -25,36 +32,124 @@
         So the man got on, and the rabbit ran off with the bride; but her husband ran after, and advised his wife to kill the rabbit.
         
         When they got to a quiet place, and rested under a tree, she asked the rabbit to let her comb his hair; but as soon as he put his head down, she gave him a severe knock on it, which stunned him, and then ran back to her husband. Thus ended the adventures of the rabbit. 
-    </p>
+        </p>
     </div>
 
-    <div class="susie">
-    <p>
-    	The fox knows how to flatter, and how to play many cunning tricks. Once upon a time he saw a raven, who alighted on a tree with a piece of meat in his beak. The fox seated himself beneath the tree, looked up at him, and began to praise him.
+    <div id ="susie">
+        <!-- <div id= "smallStoryLeft"> -->
 
-		“Your color,” he began, “is pure black. This proves to me that you possess all the wisdom of Laotzse, who knows how to shroud his learning in darkness. The manner in which you manage to feed your mother shows that your filial affection equals that which the Master Dsong had for his parents. Your voice is rough and strong. It proves that you have the courage with which King Hiang once drove his foes to flight by the mere sound of his voice. In truth, you are the king of birds!”
+        <h1>The Fox and the Raven</h1>
+        <p>
+    	The <span id="foxTrigger">fox</span> knows how to flatter, and how to play many cunning tricks. Once upon a time he saw a raven, who alighted on a tree with a piece of meat in his beak. The fox seated himself beneath the tree, looked up at him, and began to praise him.
+
+		<span class="foxQuote"> “Your color,”</span> he began, <span class="foxQuote"> is pure black. This proves to me that you possess all the wisdom of Laotzse, who knows how to shroud his learning in darkness. The manner in which you manage to feed your mother shows that your filial affection equals that which the Master Dsong had for his parents. Your voice is rough and strong. It proves that you have the courage with which King Hiang once drove his foes to flight by the mere sound of his voice. In truth, you are the king of birds!” </span>
 
 		The raven, hearing this, was filled with joy and said: “I thank you! I thank you!”
 
 		And before he knew it, the meat fell to earth from his opened beak.
 
-		The fox caught it up, devoured it and then said, laughing: “Make note of this, my dear sir: if some one praises you without occasion, he is sure to have a reason for doing so.”
-    </p>
+		The fox caught it up, devoured it and then said, laughing: <span class="foxQuote"> “Make note of this, my dear sir: if some one praises you without occasion, he is sure to have a reason for doing so.”</span> 
+        </p>
+
 	</div>
 
-    <div class = "ramon">
+    <div id = "ramon">
+        <!-- <div id= "smallStoryRight"> -->
+        <h2>The fox and the tiger </h2> 
         <p>
-        The fox and the tiger
+        
         Once a fox met a tiger. The latter bared his teeth, stretched out his claws, and was about to devour him. But the fox spoke and said: “My dear sir, you must not think that you are the only king of beasts. Your courage does not compare with my own. Let us walk together, and do you keep behind me. And if men catch sight of me and do not fear me, then you may devour me.” The tiger was willing, and so the fox led him along a broad highway. But the travelers, when they saw the tiger in the distance, were all frightened and ran away.
         Then the fox said: “How about it? I went in advance, and the men saw me and had not as yet seen you.”
         And thereupon the tiger drew in his tail and ran away himself.
         The tiger had remarked quite well that the men were afraid of the fox, but he had not noticed that the fox had borrowed the terror he inspired from him.
 
         —xii—
-
-        The tiger’s decoy
+        </p>
+        <h2>The tiger’s decoy</h2>
+        <p>
         That the fox borrowed the terror he inspired from the tiger is more than a simile; but that the tiger has his decoy is something we read about in the story books, and grandfathers talk about a good deal, too. So there must be some truth in it. It is said that when a tiger devours a human being, the latter’s spirit cannot free itself, and that the tiger then uses it for a decoy. When he goes out to seek his prey, the spirit of the man he has devoured must go before him, to hide him, so that people cannot see him. And the spirit is apt to change itself into a beautiful girl, or a lump of gold or a bolt of silk. All sorts of deceptions are used to lure folk into the mountain gorges. Then the tiger comes along and devours his victim, and the new spirit must serve as his decoy. The old spirit’s time of service is over and it may go. And so it continues, turn by turn. Probably that is why they say of people who are forced to yield themselves up to cunning and powerful men, in order that others may be harmed: “They are the tiger’s decoys!”
-    </p>
-</div>
+        </p>
+    </div>
 </div> 
+
+
 </body>
+
+
+<script> 
+
+    // Script to  Highlight all Fox Quotes
+
+    let foxTrigger = document.getElementById('foxTrigger'); 
+
+
+    foxTrigger.addEventListener("mouseover", function () {
+        // console.log("hovered!")
+        let foxQuotes = document.getElementsByClassName('foxQuote');
+        for (let quote in foxQuotes) {
+            if (foxQuotes.hasOwnProperty(quote)) {
+                foxQuotes[quote].classList.add('highlight')
+                // console.log("highlighted")
+            }
+        }
+    })
+
+    foxTrigger.addEventListener("mouseleave", function () {
+        // console.log("exited!")
+        let foxQuotes = document.getElementsByClassName('foxQuote'); 
+        for (let quote in foxQuotes) {
+            if (foxQuotes.hasOwnProperty(quote)) {
+                foxQuotes[quote].classList.remove('highlight')
+                // console.log("unhighlighted")
+            }
+        }
+    })
+    // End Script to Highlight Fox Quotes
+
+    //Script to resize the grid
+    let layout = document.getElementById('layout');
+    let ramon = document.getElementById('ramon');
+    let susie = document.getElementById('susie');
+    let celine = document.getElementById('celine');
+
+    // this is just if you click celine. Can't you make it do it works no matter what you click?
+    celine.addEventListener("click", function() {
+        layout.classList.remove("equalLayout");
+        layout.classList.add("spotlightLayout");
+        celine.classList.remove('smallStoryLeft', 'smallStoryRight');
+        celine.classList.add('largeStory');
+        susie.classList.remove('smallStoryRight', 'largeStory');
+        susie.classList.add('smallStoryLeft');
+        ramon.classList.remove('largeStory', 'smallStoryLeft');
+        ramon.classList.add('smallStoryRight');
+    })
+
+    susie.addEventListener("click", function() {
+        layout.classList.remove("equalLayout");
+        layout.classList.add("spotlightLayout");
+        susie.classList.remove('smallStoryLeft', 'smallStoryRight');
+        susie.classList.add('largeStory');
+        ramon.classList.remove('smallStoryRight', 'largeStory');
+        ramon.classList.add('smallStoryLeft');
+        celine.classList.remove('largeStory', 'smallStoryLeft');
+        celine.classList.add('smallStoryRight');
+    })
+
+    ramon.addEventListener("click", function() {
+        layout.classList.remove("equalLayout");
+        layout.classList.add("spotlightLayout");
+        ramon.classList.remove('smallStoryLeft', 'smallStoryRight');
+        ramon.classList.add('largeStory');
+        celine.classList.remove('smallStoryRight', 'largeStory');
+        celine.classList.add('smallStoryLeft');
+        susie.classList.remove('largeStory', 'smallStortLeft');
+        susie.classList.add('smallStoryRight');
+    })
+
+    //End Script to resize grid
+
+
+</script>
+
+
+

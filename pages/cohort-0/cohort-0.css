@@ -147,7 +147,7 @@ h4 {
 }
 
 p {
-    color: rgb(0,14,255,1);
+    /* color: #272727; */
     font-size: 1.2em;
     line-height: 1.5em;
     font-family: 'Redaction';
@@ -173,7 +173,8 @@ a:visited {
     color: green;
 }
 
-.layout{
+
+.equalLayout{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 24px; 
@@ -181,32 +182,78 @@ a:visited {
     overflow:hidden;
 }
 
-.celine::-webkit-scrollbar {
-        background:transparent;
-        display:none;}
+.spotlightLayout {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60vh 20vh;
+    grid-gap: 24px; 
+    height: 80vh;
+    overflow:hidden;
+}
 
-.celine {
-   color: #272727 ;
-   text-align: right;
-   overflow-y: scroll;
+.largeStory {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center !important;
 
 }
-.susie::-webkit-scrollbar {
-        background:transparent;
-        display:none;}
 
-.susie{
+.smallStoryLeft {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: right !important;
+
+
+}
+
+.smallStoryRight {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: left !important;
+
+
+}
+
+#celine {
+   text-align: right;
+   overflow-y: scroll;
+}
+
+#celine::-webkit-scrollbar {
+    background:transparent;
+    display:none;
+}
+
+
+#susie{
     text-align: center;
     overflow-y: scroll;
 }
 
-.ramon::-webkit-scrollbar {
-        background:transparent;
-        display:none;}
+#susie::-webkit-scrollbar {
+    background:transparent;
+    display:none;
+}
 
-.ramon{
+#ramon{
     text-align: left;
     overflow-y: scroll;
+}
+
+#ramon::-webkit-scrollbar {
+    background:transparent;
+    display:none;}
+
+.highlight {
+    background-color: #272727;
+    color: white;
+    border-radius: 2px;
 }
 
 /* 
